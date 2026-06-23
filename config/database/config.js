@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 require('dotenv').config({ path: '.env' });
 
 module.exports = {
@@ -8,6 +7,7 @@ module.exports = {
     database: process.env.DATABASE_NAME,
     host: process.env.DATABASE_HOST,
     dialect: process.env.DATABASE_DIALECT,
+    port: process.env.DATABASE_PORT,
   },
   test: {
     username: 'database_test',
@@ -17,10 +17,10 @@ module.exports = {
     dialect: process.env.DATABASE_DIALECT,
   },
   production: {
-    username: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
-    host: process.env.DB_HOSTNAME,
+    username: process.env.DATABASE_USER,
+    password: process.env.DATABASE_PASSWORD,
+    database: process.env.DATABASE_NAME,
+    host: process.env.DATABASE_HOST,
     dialect: process.env.DATABASE_DIALECT,
   },
 };
