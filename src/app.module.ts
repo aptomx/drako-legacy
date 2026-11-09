@@ -13,7 +13,6 @@ import { MulterModule } from '@nestjs/platform-express';
 import { MulterConfigService } from 'config/filesystem/multer.service';
 import { DatabaseModule } from './modules/database/database.module';
 import { TodosModule } from './modules/todos/todos.module';
-import { BasicModule } from './lib/examples/basic.module';
 import { MainModule } from './lib/main/main.module';
 import { UsersModule } from './modules/users/users.module';
 import { AuthModule } from './modules/auth/auth.module';
@@ -40,7 +39,6 @@ import appleConfig from 'config/registers/apple.config';
     ResizeImagesModule,
     MailModule,
     MainModule,
-    BasicModule,
     DatabaseModule,
     TodosModule,
     UsersModule,
